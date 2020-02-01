@@ -1,8 +1,8 @@
 {
   "name": "mesto",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "sprint 11",
+  "main": "./src/index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/DaneGalahad/mesto.git"
   },
-  "author": "",
+  "author": "Denis Davydov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DaneGalahad/mesto/issues"
