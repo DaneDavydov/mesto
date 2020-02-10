@@ -1,6 +1,16 @@
+import './pages/index.css';
+import Api from './scripts/api.js';
+import Card from './scripts/card.js';
+import CardList from './scripts/cardList.js';
+import PopupEdit from './scripts/popupEdit.js';
+import PopupImage from './scripts/popupImage.js';
+import PopupPlace from './scripts/popupPlace.js';
+import Root from './scripts/root.js';
+import UserInfo from './scripts/userInfo.js';
+
 //подключение к серверу
 const api = new Api({
-    url: 'http://95.216.175.5/cohort6',
+    url: 'https://praktikum.tk/cohort6',
     headers: {
         authorization: 'f3ac0165-929d-4f0b-a0f7-3358575c163c',
         'Content-Type': 'application/json'
@@ -154,13 +164,10 @@ root.container.addEventListener("click", event => {
     edit.close(event);
 });
 /**
- * Здравствуйте
- * Хорошая организация классов и кодовой базы. Вы молодцы, проработали хорошо задание
+
  *
  * Можно лучше : Ну catch я бы перенёс в класс Api. Api это больше является прослойкой,
  * и информация о том что сервер не работает при обновлении профиля всё таки должна исходить из класса Api
  *
- * можно лучше:  initialCards не нужен, удалите его. Вы же сейчас карточки получаете из класса Api
- *
- * Работа принимается
+
 */

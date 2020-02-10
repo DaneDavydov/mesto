@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      <img src="<%=require('./images/logo.svg')%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -28,7 +28,7 @@
     
     <div class="popup popup_type_place">
       <div class="popup__content input__container">
-        <img src="./images/close.svg" alt="" id="place-close" class="popup__close">
+        <img src="<%=require('./images/close.svg')%>" alt="" id="place-close" class="popup__close">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form place__form" name="new">
           <input type="text" id="place" required minlength="2" maxlength="30" class="popup__input popup__input_type_name" placeholder="Название">
@@ -42,7 +42,7 @@
 
     <div class="popup-edit">
       <div class="popup__content input__container">
-        <img src="./images/close.svg" alt="" id="user-close" class="popup__close popup-edit__close">
+        <img src="<%=require('./images/close.svg')%>" alt="" id="user-close" class="popup__close popup-edit__close">
         <h3 class="popup__title">Редактировать профиль</h3>
         <form class="popup__form user__form" name="user">
             <input type="text" name="name" id="name" minlength="2" maxlength="30" required class="popup__input popup__input_type_name" autocomplete="off" placeholder="Имя">
@@ -57,22 +57,12 @@
 
     <div class="popup-image popup_type_image" name="popupImage">
       <div class="popup-image__content">
-        <img src="./images/close.svg" alt="" id="image-close" class="popup__close popup-image__close">
+        <img src="<%=require('./images/close.svg')%>" alt="" id="image-close" class="popup__close popup-image__close">
         <img src="" alt="" class="popup__pic">
       </div>
     </div>
 
   </div>
-  <script src="scripts/api.js"></script>
-  <script src="scripts/root.js"></script>
-  <script src="scripts/initialCards.js"></script>
-  <script src="scripts/card.js"></script>
-  <script src="scripts/userInfo.js"></script>
-  <script src="scripts/cardList.js"></script>
-  <script src="scripts/popup.js"></script>
-  <script src="scripts/popupEdit.js"></script>
-  <script src="scripts/popupPlace.js"></script>
-  <script src="scripts/popupImage.js"></script>
-  <script src="script.js"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>

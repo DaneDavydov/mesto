@@ -1,5 +1,5 @@
 //блок user-info
-class UserInfo {
+export default class UserInfo {
   constructor(doc, api) {
     this.name = doc.querySelector(".user-info__name");
     this.about = doc.querySelector(".user-info__job");

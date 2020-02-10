@@ -1,5 +1,6 @@
+import Popup from './popup';
 // класс попап place
-class PopupPlace extends Popup {
+export default class PopupPlace extends Popup {
   constructor(container, cardList) {
     super(container);
     this.cardList = cardList;

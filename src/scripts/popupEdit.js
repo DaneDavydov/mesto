@@ -1,5 +1,6 @@
+import Popup from './popup';
 // класс попап редактирование
-class PopupEdit extends Popup {
+export default class PopupEdit extends Popup {
   constructor(container, user, api) {
     super(container);
     this.api = api;
