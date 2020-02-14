@@ -19,7 +19,7 @@
 - валидация форм при помощи JS и HTML
 
 # Сылка на демо проекта
-https://danegalahad.github.io/mesto/
+https://danedavydov.github.io/mesto/
 
 # Установка
 
@@ -27,7 +27,7 @@ https://danegalahad.github.io/mesto/
 
 Скопируйте проект на компьютер:
 ```
-git clone https://github.com/danegalahad/mesto.git
+git clone https://github.com/danedavydov/mesto.git
 ```
 
 Установите зависимости:
